@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"  # The build command for your Vite project
+  publish = "dist"           # The directory to deploy (output directory after build)
+  functions = "functions"     # The directory containing Netlify serverless functions, if used
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
